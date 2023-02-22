@@ -6,18 +6,29 @@
 
 <div align="center">
 
-# nonebot-plugin-example
+# nonebot_plugin_example
 
 _✨ NoneBot 插件简单描述 ✨_
 
 
+<a href="https://github.com/Ikaros-521/nonebot_plugin_example/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/Ikaros-521/nonebot_plugin_example?color=%09%2300BFFF&style=flat-square">
+</a>
+<a href="https://github.com/Ikaros-521/nonebot_plugin_example/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Ikaros-521/nonebot_plugin_example?color=Emerald%20green&style=flat-square">
+</a>
+<a href="https://github.com/Ikaros-521/nonebot_plugin_example/network">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Ikaros-521/nonebot_plugin_example?color=%2300BFFF&style=flat-square">
+</a>
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/owner/nonebot-plugin-example.svg" alt="license">
+    <img src="https://img.shields.io/github/license/Ikaros-521/nonebot_plugin_example.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot-plugin-example">
-    <img src="https://img.shields.io/pypi/v/nonebot-plugin-example.svg" alt="pypi">
+<a href="https://pypi.python.org/pypi/nonebot_plugin_example">
+    <img src="https://img.shields.io/pypi/v/nonebot_plugin_example.svg" alt="pypi">
 </a>
-<img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
+<a href="https://www.python.org">
+    <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
+</a>
 
 </div>
 
@@ -26,68 +37,95 @@ _✨ NoneBot 插件简单描述 ✨_
 模板库使用方法:
 1. 点击仓库中的 "Use this template" 按钮, 输入仓库名与描述, 点击 "  Create repository from template" 创建仓库
 2. 在创建好的新仓库中, 在 "Add file" 菜单中选择 "Create new file", 在新文件名处输入`LICENSE`, 此时在右侧会出现一个 "Choose a license template" 按钮, 点击此按钮选择开源协议模板, 然后在最下方提交新文件到主分支
-3. 全局替换`owner`为仓库所有者ID; 全局替换`nonebot-plugin-example`为插件名; 全局替换`nonebot_plugin_example`为包名; 修改 python 徽标中的版本为你插件的运行所需版本
+3. 全局替换`Ikaros-521`为仓库所有者ID; 全局替换`nonebot_plugin_example`为插件名; 全局替换`nonebot_plugin_example`为包名; 修改 python 徽标中的版本为你插件的运行所需版本
 4. 修改 README 中的插件名和插件描述, 并在下方填充相应的内容
 
 ## 📖 介绍
 
 这里是插件的详细介绍部分
 
-## 💿 安装
+## 🔧 开发环境
+Nonebot2：2.0.0b5  
+python：3.8.13  
+操作系统：Windows10（Linux兼容性问题不大）  
+编辑器：VS Code  
+
+## 💿 安装  
+
+### 1. nb-cli安装（推荐）
+
+在你bot工程的文件夹下，运行cmd（运行路径要对啊），执行nb命令安装插件，插件配置会自动添加至配置文件  
+```
+nb plugin install nonebot_plugin_example
+```
+
+### 2. 本地安装
+
+将项目clone到你的机器人插件下的对应插件目录内（一般为机器人文件夹下的`src/plugins`），然后把`nonebot_plugin_example`文件夹里的内容拷贝至上一级目录即可。  
+clone命令参考（得先装`git`，懂的都懂）：
+```
+git clone https://github.com/Ikaros-521/nonebot_plugin_example.git
+``` 
+也可以直接下载压缩包到插件目录解压，然后同样提取`nonebot_plugin_example`至上一级目录。  
+目录结构： ```你的bot/src/plugins/nonebot_plugin_example/__init__.py```  
+
+
+### 3. pip安装
+```
+pip install nonebot_plugin_example
+```  
+打开 nonebot2 项目的 ```bot.py``` 文件, 在其中写入  
+```nonebot.load_plugin('nonebot_plugin_example')```  
+当然，如果是默认nb-cli创建的nonebot2的话，在bot路径```pyproject.toml```的```[tool.nonebot]```的```plugins```中添加```nonebot_plugin_example```即可  
+pyproject.toml配置例如：  
+``` 
+[tool.nonebot]
+plugin_dirs = ["src/plugins"]
+plugins = ["nonebot_plugin_example"]
+``` 
+
+### 更新版本
+```
+nb plugin update nonebot_plugin_example
+```
+
+## 🔧 配置
+
+### env配置
+```
+# 在你的env文件中添加如下配置（我的是.env.prod）  
+openai_secret_key="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+|       配置项        | 必填 | 默认值  |                      说明                      |
+|:----------------:|:----:|:----:|:----------------------------:|
+| `openai_secret_key` | 是 | `""` | 参考上文secret key获取方式 |
+
+
+## 🎉 功能
+  
+
+## 👉 命令
+
+### /命x令
+命令结构：```/命x令```  
+例如：```/命x令```  
+bot返回内容：  
+![](docs/result.png)
+
+
+## ⚙ 拓展
+ 
+
+## 📝 更新日志
 
 <details>
-<summary>使用 nb-cli 安装</summary>
-在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
+<summary>展开/收起</summary>
 
-    nb plugin install nonebot-plugin-example
+### 0.0.1
+
+- 插件初次发布  
 
 </details>
 
-<details>
-<summary>使用包管理器安装</summary>
-在 nonebot2 项目的插件目录下, 打开命令行, 根据你使用的包管理器, 输入相应的安装命令
-
-<details>
-<summary>pip</summary>
-
-    pip install nonebot-plugin-example
-</details>
-<details>
-<summary>pdm</summary>
-
-    pdm add nonebot-plugin-example
-</details>
-<details>
-<summary>poetry</summary>
-
-    poetry add nonebot-plugin-example
-</details>
-<details>
-<summary>conda</summary>
-
-    conda install nonebot-plugin-example
-</details>
-
-打开 nonebot2 项目根目录下的 `pyproject.toml` 文件, 在 `[tool.nonebot]` 部分追加写入
-
-    plugins = ["nonebot_plugin_example"]
-
-</details>
-
-## ⚙️ 配置
-
-在 nonebot2 项目的`.env`文件中添加下表中的必填配置
-
-| 配置项 | 必填 | 默认值 | 说明 |
-|:-----:|:----:|:----:|:----:|
-| 配置项1 | 是 | 无 | 配置说明 |
-| 配置项2 | 否 | 无 | 配置说明 |
-
-## 🎉 使用
-### 指令表
-| 指令 | 权限 | 需要@ | 范围 | 说明 |
-|:-----:|:----:|:----:|:----:|:----:|
-| 指令1 | 主人 | 否 | 私聊 | 指令说明 |
-| 指令2 | 群员 | 是 | 群聊 | 指令说明 |
-### 效果图
-如果有效果图的话
+## 致谢
+- [nonebot-plugin-template](https://github.com/A-kirami/nonebot-plugin-template)
