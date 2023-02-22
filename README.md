@@ -129,3 +129,59 @@ bot返回内容：
 
 ## 致谢
 - [nonebot-plugin-template](https://github.com/A-kirami/nonebot-plugin-template)
+
+## 项目打包上传至pypi
+
+官网：https://pypi.org，注册账号，在系统用户根目录下创建`.pypirc`，配置  
+``` 
+[distutils] 
+index-servers=pypi 
+ 
+[pypi] repository = https://upload.pypi.org/legacy/ 
+username = 用户名 
+password = 密码
+```
+
+### poetry
+
+```
+# 参考 https://www.freesion.com/article/58051228882/
+# poetry config pypi-token.pypi
+
+# 1、安装poetry
+pip install poetry
+
+# 2、初始化配置文件（根据提示填写）
+poetry init
+
+# 3、微调配置文件pyproject.toml
+
+# 4、运行 poetry install, 可生成 “poetry.lock” 文件（可跳过）
+poetry install
+
+# 5、编译，生成dist
+poetry build
+
+# 6、发布(poetry config pypi-token.pypi 配置token)
+poetry publish
+
+```
+
+### twine
+
+```
+# 参考 https://www.cnblogs.com/danhuai/p/14915042.html
+#创建setup.py文件 填写相关信息
+
+# 1、可以先升级打包工具
+pip install --upgrade setuptools wheel twine
+
+# 2、打包
+python setup.py sdist bdist_wheel
+
+# 3、可以先检查一下包
+twine check dist/*
+
+# 4、上传包到pypi（需输入用户名、密码）
+twine upload dist/*
+```
