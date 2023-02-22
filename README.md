@@ -45,7 +45,7 @@ _✨ NoneBot 插件简单描述 ✨_
 这里是插件的详细介绍部分
 
 ## 🔧 开发环境
-Nonebot2：2.0.0b5  
+Nonebot2：2.0.0rc3  
 python：3.8.13  
 操作系统：Windows10（Linux兼容性问题不大）  
 编辑器：VS Code  
