@@ -32,9 +32,10 @@ _✨ 高效，快速的小小WEBAPI调用插件！ ✨_
 </div>
 
 
-## 📖 介绍
+## 📖 前言及介绍
 
-PS: 这是我第一次写(划掉，是稍微借鉴了一点！详见最下方致谢)插件，没有多少经验，写的也不规范，如果介意可以不用，望多多关照～(如果可以，给个star)  
+PS: 这是我第一次写(划掉，是借鉴去ctrlcv！详见最下方致谢)插件，没有多少经验，写的也不规范，如果介意可以不用，望多多关照～(如果可以，给个star)  
+不要喷我～这个插件大佬5分钟就能搓出来……我是为了那些想写插件但是不会写的人群而写的这个插件，你可以随便借鉴，没什么精髓，只要标明致谢就好了～(╥╯^╰╥)  
 这个插件主要功能是调用WEBAPI链接获取数据处理后发到QQ里面的，目前统一使用json调用并解析，有问题记得issues！
 
 ## 🔧 开发环境
@@ -86,7 +87,7 @@ nb plugin update nonebot_plugin_smallapi
 ### env配置
 ```
 # 在你的env文件中添加如下配置（我的是.env）  
-笑死，这玩意没配置
+114514 = '笑死，这玩意没配置，不要把114514写进去！！！'
 
 ```
 |       配置项        | 必填 | 默认值  |                      说明                      |  
@@ -136,5 +137,5 @@ nb plugin update nonebot_plugin_smallapi
 </details>
 
 ## 致谢
-- [借鉴的代码源文件](https://github.com/lgc-NB2Dev/ShigureBot/blob/main/src/plugins/shigure_bot/plugins/site_tool/__main__.py)
+- [借鉴的代码](https://github.com/lgc-NB2Dev/ShigureBot/blob/main/src/plugins/shigure_bot/plugins/site_tool/__main__.py)
 - [nonebot-plugin-template](https://github.com/A-kirami/nonebot-plugin-template)
