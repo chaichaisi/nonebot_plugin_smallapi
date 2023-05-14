@@ -1,33 +1,32 @@
 <div align="center">
-  <a href="https://v2.nonebot.dev/store"><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo"></a>
+  <a href="https://v2.nonebot.dev/store"><img src="https://v2.nonebot.dev/logo.png" width="180" height="180" alt="NoneBotPluginLogo"></a>
   <br>
-  <p><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText"></p>
 </div>
 
 <div align="center">
 
-# nonebot_plugin_example
+# nonebot_plugin_smallapi
 
-_✨ 高效，自定义化的小小的WEBAPI调用插件！ ✨_
+_✨ 高效，快速的小小WEBAPI调用插件！ ✨_
 
 
-<a href="https://github.com/Ikaros-521/nonebot_plugin_example/stargazers">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/Ikaros-521/nonebot_plugin_example?color=%09%2300BFFF&style=flat-square">
+<a href="https://github.com/chaichaisi/nonebot_plugin_smallapi/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/chaichaisi/nonebot_plugin_smallapi?color=%09%2300BFFF&style=flat-square">
 </a>
-<a href="https://github.com/Ikaros-521/nonebot_plugin_example/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Ikaros-521/nonebot_plugin_example?color=Emerald%20green&style=flat-square">
+<a href="https://github.com/chaichaisi/nonebot_plugin_smallapi/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/chaichaisi/nonebot_plugin_smallapi?color=Emerald%20green&style=flat-square">
 </a>
-<a href="https://github.com/Ikaros-521/nonebot_plugin_example/network">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Ikaros-521/nonebot_plugin_example?color=%2300BFFF&style=flat-square">
+<a href="https://github.com/chaichaisi/nonebot_plugin_smallapi/network">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/chaichaisi/nonebot_plugin_smallapi?color=%2300BFFF&style=flat-square">
 </a>
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/Ikaros-521/nonebot_plugin_example.svg" alt="license">
+    <img src="https://img.shields.io/github/license/chaichaisi/nonebot_plugin_smallapi.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot_plugin_example">
-    <img src="https://img.shields.io/pypi/v/nonebot_plugin_example.svg" alt="pypi">
+<a href="https://pypi.python.org/pypi/nonebot_plugin_smallapi">
+    <img src="https://img.shields.io/pypi/v/nonebot_plugin_smallapi.svg" alt="pypi">
 </a>
 <a href="https://www.python.org">
-    <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
+    <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
 </a>
 
 </div>
@@ -35,78 +34,90 @@ _✨ 高效，自定义化的小小的WEBAPI调用插件！ ✨_
 
 ## 📖 介绍
 
-这里是插件的详细介绍部分
+PS: 这是我第一次写(划掉，是稍微借鉴了一点！详见最下方致谢)插件，没有多少经验，写的也不规范，如果介意可以不用，望多多关照～(如果可以，给个star)  
+这个插件主要功能是调用WEBAPI链接获取数据处理后发到QQ里面的，目前支持json解析和图片url文字text直接解析，所有配置都写env里面，有问题就issues！
 
 ## 🔧 开发环境
-Nonebot2：2.0.0rc3  
-python：3.8.13  
-操作系统：Windows10（Linux兼容性问题不大）  
-编辑器：VS Code  
+Nonebot2：2.0.0rc4  
+python：3.11.3  
+操作系统：Linux（Windows兼容性问题不大）  
+编辑器：VS Code
 
 ## 💿 安装  
 
 ### 1. nb-cli安装（推荐）
 
-在你bot工程的文件夹下，运行cmd（运行路径要对啊），执行nb命令安装插件，插件配置会自动添加至配置文件  
+在你bot工程的文件夹下，运行cmd/shell（运行路径要对啊），执行nb命令安装插件，插件配置会自动添加至配置文件  
 ```
-nb plugin install nonebot_plugin_example
+nb plugin install nonebot_plugin_smallapi
 ```
 
-### 2. 本地安装
-
-将项目clone到你的机器人插件下的对应插件目录内（一般为机器人文件夹下的`src/plugins`），然后把`nonebot_plugin_example`文件夹里的内容拷贝至上一级目录即可。  
-clone命令参考（得先装`git`，懂的都懂）：
+### 2. pip安装
 ```
-git clone https://github.com/Ikaros-521/nonebot_plugin_example.git
-``` 
-也可以直接下载压缩包到插件目录解压，然后同样提取`nonebot_plugin_example`至上一级目录。  
-目录结构： ```你的bot/src/plugins/nonebot_plugin_example/__init__.py```  
-
-
-### 3. pip安装
-```
-pip install nonebot_plugin_example
+pip install nonebot_plugin_smallapi
 ```  
 打开 nonebot2 项目的 ```bot.py``` 文件, 在其中写入  
-```nonebot.load_plugin('nonebot_plugin_example')```  
-当然，如果是默认nb-cli创建的nonebot2的话，在bot路径```pyproject.toml```的```[tool.nonebot]```的```plugins```中添加```nonebot_plugin_example```即可  
+```nonebot.load_plugin('nonebot_plugin_smallapi')```  
+当然，如果是默认nb-cli创建的nonebot2的话，在bot路径```pyproject.toml```的```[tool.nonebot]```的```plugins```中添加```nonebot_plugin_smallapi```即可  
 pyproject.toml配置例如：  
 ``` 
 [tool.nonebot]
 plugin_dirs = ["src/plugins"]
-plugins = ["nonebot_plugin_example"]
+plugins = ["nonebot_plugin_smallapi"]
 ``` 
+
+### 3. 本地安装(不推荐)
+
+将项目clone到你的机器人插件下的对应插件目录内（一般为机器人文件夹下的`src/plugins`），然后把`nonebot_plugin_smallapi`文件夹里的内容拷贝至上一级目录即可。  
+clone命令参考（得先装`git`，懂的都懂）：
+```
+git clone https://github.com/chaichaisi/nonebot_plugin_smallapi.git
+``` 
+也可以直接下载压缩包到插件目录解压，然后同样提取`nonebot_plugin_smallapi`至上一级目录。  
+目录结构： ```你的bot/src/plugins/nonebot_plugin_smallapi/__init__.py```  
 
 ### 更新版本
 ```
-nb plugin update nonebot_plugin_example
+nb plugin update nonebot_plugin_smallapi
 ```
 
 ## 🔧 配置
 
 ### env配置
 ```
-# 在你的env文件中添加如下配置（我的是.env.prod）  
-openai_secret_key="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# 在你的env文件中添加如下配置（我的是.env）  
+笑死，这玩意没配置
+
 ```
-|       配置项        | 必填 | 默认值  |                      说明                      |
-|:----------------:|:----:|:----:|:----------------------------:|
-| `openai_secret_key` | 是 | `""` | 参考上文secret key获取方式 |
+|       配置项        | 必填 | 默认值  |                      说明                      |  
+|:----------------:|:----:|:----:|:----------------------------:|  
+| `` | 否 | `""` | 空空如也 |
+
 
 
 ## 🎉 功能
   
+  1. 齐全的API随机图片系统  
+  2. 齐全的API随机文本系统  
+  3. 不太好使的网站工具系统
 
 ## 👉 命令
+  
+  PS: 请查看你env中起始符的配置(默认```/```)  
+  1. API图片系统(图片系统)  
+  2. API文字系统(文字系统)
 
-### /命x令
-命令结构：```/命x令```  
-例如：```/命x令```  
-bot返回内容：  
-![](docs/result.png)
+### API图片系统
+命令结构：```(/)API图片系统```  
+例如：```API图片系统```  
+
+### API文字系统
+命令结构：```(/)API文字系统```  
+例如：```API文字系统```  
 
 ## ⚙ 拓展
  
+ 还没有呢～
 
 ## 📝 更新日志
 
@@ -120,5 +131,5 @@ bot返回内容：
 </details>
 
 ## 致谢
+- [借鉴的代码源文件](https://github.com/lgc-NB2Dev/ShigureBot/blob/main/src/plugins/shigure_bot/plugins/site_tool/__main__.py)
 - [nonebot-plugin-template](https://github.com/A-kirami/nonebot-plugin-template)
-
