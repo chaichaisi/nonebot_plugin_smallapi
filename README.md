@@ -106,6 +106,7 @@ nb plugin update nonebot_plugin_smallapi
   PS: 请查看你env中起始符的配置(默认```/```)  
   1. API图片系统(图片系统)  
   2. API文字系统(文字系统)
+  3. API站点系统(站点系统)
 
 ### API图片系统
 命令结构：```(/)API图片系统```  
@@ -114,6 +115,10 @@ nb plugin update nonebot_plugin_smallapi
 ### API文字系统
 命令结构：```(/)API文字系统```  
 例如：```API文字系统```  
+
+### API站点系统
+命令结构：```(/)API站点系统```  
+例如：```API站点系统```
 
 ## ⚙ 拓展
  
