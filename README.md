@@ -130,7 +130,7 @@ nb plugin update nonebot_plugin_smallapi
 <details>
 <summary>展开/收起</summary>
 
-### 0.0.1
+### 0.0.2
 
 - 插件初次发布  
 
