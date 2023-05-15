@@ -133,6 +133,10 @@ nb plugin update nonebot_plugin_smallapi
 ### 1.0.0
 
 - 插件初次发布  
+  
+### 1.0.1
+
+- 修复依赖问题
 
 </details>
 
