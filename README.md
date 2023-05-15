@@ -141,6 +141,10 @@ nb plugin update nonebot_plugin_smallapi
 ### 1.0.2
   
 - 梅开二度
+  
+### 1.0.3
+  
+- 梅开三度，终于修好了依赖
 </details>
 
 ## 致谢
