@@ -138,6 +138,9 @@ nb plugin update nonebot_plugin_smallapi
 
 - 修复依赖问题
 
+### 1.0.2
+  
+- 梅开二度
 </details>
 
 ## 致谢
