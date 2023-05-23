@@ -44,7 +44,7 @@ def format_return_site(ret_site, func=None):
 
 async def get_api_resp_site(name, params, original=False) -> dict | list | bytes:
     async with aiohttp.ClientSession() as s:
-        async with s.get(f"https://v2.api-m.com/api/{name}", params=params) as resp:
+        async with s.get(f"https://api.gumengya.com/Api/{name}", params=params) as resp:
             ret_site = f'{None}'
             if original:
                 ret_site = await resp.read()

@@ -49,6 +49,6 @@ async def handle_onebot(matcher: Matcher,bot: OneBot):
 @error_handle()
 async def handle_onebot(matcher: Matcher,bot: OneBot):
     msg_api_site = MessageSegment.text(
-            "API站点系统\n|ip查询|网站测速|\n|ping|icp查询|\n|whois查询|"
+            "API站点系统\n|ip查询|拦截检测|\n|ping|icp查询|\n|whois查询|收录查询|"
         )
     await matcher.finish(msg_api_site,at_sender=True)

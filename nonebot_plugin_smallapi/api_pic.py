@@ -16,7 +16,7 @@ async def handle_onebot(bot: OneBot, matcher: Matcher, args: Message = CommandAr
                 "code": "200",
                 "msg": "请求成功",
                 "data": MessageSegment.image(
-                    await get_api_resp("randomAcgPic?type=pc" , "data" , original=True)
+                    await get_api_resp("DmImg" , "data.url" , original=True)
                 ),
             },
             lambda ret: ret,
@@ -33,7 +33,7 @@ async def handle_onebot(bot: OneBot, matcher: Matcher, args: Message = CommandAr
                 "code": "200",
                 "msg": "请求成功",
                 "data": MessageSegment.image(
-                    await get_api_resp("random4kPic?type=acg" , "data" , original=True)
+                    await get_api_resp("DmImgS" , "data.url" , original=True)
                 ),
             },
             lambda ret: ret,
@@ -50,7 +50,7 @@ async def handle_onebot(bot: OneBot, matcher: Matcher, args: Message = CommandAr
                 "code": "200",
                 "msg": "请求成功",
                 "data": MessageSegment.image(
-                    await get_api_resp("bing" , "data" , original=True)
+                    await get_api_resp("BingImg" , "data.url" , original=True)
                 ),
             },
             lambda ret: ret,
@@ -67,7 +67,7 @@ async def handle_onebot(bot: OneBot, matcher: Matcher, args: Message = CommandAr
                 "code": "200",
                 "msg": "请求成功",
                 "data": MessageSegment.image(
-                    await get_api_resp("random4kPic?type=wallpaper" , "data" , original=True)
+                    await get_api_resp("FjImg" , "data.url" , original=True)
                 ),
             },
             lambda ret: ret,

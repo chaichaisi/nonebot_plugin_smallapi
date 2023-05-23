@@ -14,7 +14,7 @@ async def handle_onebot(bot: OneBot, matcher: Matcher, args: Message = CommandAr
                 "code": "200",
                 "msg": "请求成功",
                 "data": MessageSegment.text(
-                    await get_api_resp("dog" , "data" , original=True)
+                    await get_api_resp("Dog" , "data.text" , original=True)
                 ),
             },
             lambda ret: ret,
@@ -31,7 +31,7 @@ async def handle_onebot(matcher: Matcher, args: Message = CommandArg()):
                 "code": "200",
                 "msg": "请求成功",
                 "data": MessageSegment.text(
-                    await get_api_resp("renjian" , "data" , original=True)
+                    await get_api_resp("WaSentence" , "data.text" , original=True)
                 ),
             },
             lambda ret: ret,
@@ -48,7 +48,7 @@ async def handle_onebot(matcher: Matcher, args: Message = CommandArg()):
                 "code": "200",
                 "msg": "请求成功",
                 "data": MessageSegment.text(
-                    await get_api_resp("aiqinggongyu" , "data" , original=True)
+                    await get_api_resp("Xiaohua" , "data.text" , original=True)
                 ),
             },
             lambda ret: ret,

@@ -48,14 +48,14 @@ async def get_api_resp(name , params , original=True) -> dict | list | str:
     async with aiohttp.ClientSession() as client:
         ret = f'{None}'
         if original:
-            async with client.get(f'https://v2.api-m.com/api/{name}') as resp:
+            async with client.get(f'https://api.gumengya.com/Api/{name}') as resp:
                 ret_old_1 = str(await resp.json())
                 ret_old_1 = ast.literal_eval(ret_old_1)
                 ret = jsonpath.jsonpath(ret_old_1, f"$.{params}")[0]
                 logger.info(f"有人调用了API: {name} {ret_old_1}")
                 return ret
         else:
-            async with client.get(f'https://v2.api-m.com/api/{name}') as resp:
+            async with client.get(f'https://api.gumengya.com/Api/{name}') as resp:
                 ret = await resp.text()
                 logger.info(f"有人调用了API: {name} {ret}")
                 return ret
