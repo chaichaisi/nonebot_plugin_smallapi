@@ -132,7 +132,7 @@ nb plugin update nonebot_plugin_smallapi
 
 ### 1.0.0
 
--
+- 插件初次发布
 
 ### 1.0.1
 
@@ -149,6 +149,11 @@ nb plugin update nonebot_plugin_smallapi
 ### 1.0.4
 
 - 更换稳定API, 修复部分Bug
+
+### 1.0.5
+
+- 修复ip查询中的致命语法错误
+
 </details>
 
 ## 致谢
