@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot_plugin_smallapi"
-version = "0.0.1"
+version = "1.0.4"
 description = "高效，快速的小小API调用插件！"
 authors = ["Chaichaisi <chaichaisi@qq.com>"]
 license = "MIT"
