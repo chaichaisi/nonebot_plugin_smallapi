@@ -10,16 +10,34 @@ async def _(matcher: Matcher, args: Message = CommandArg()):
             await get_api_resp("IP", {"ip": arg}),
             lambda ret_web: (
                 f'查询目标：{ret_web["ip"]}\n'
-                f'IP地址：{(ret_web["location"].get("ip"))}\n'
-                f'IP类型：{ret_web["isp"]}\n'
-                f'IP地区：{ret_web["country"]}\n'
-                f'IP段起始: {ret_web["range.start"]}\n'
-                f'IP段结束: {ret_web["range.end"]}'
-                f'更多信息：{ret_web["area"]}'
+                f'IP地址：{ret_web["location"].get("ip")}\n'
+                #f'IP类型：{ret_web["location"].get("isp")}\n'
+                f'IP地区：{ret_web["location"].get("country")}\n'
+                f'IP段起始: {ret_web["location"].get("range").get("start")}\n'
+                f'IP段结束: {ret_web["location"].get("range").get("end")}\n'
+                f'更多信息：{ret_web["location"].get("area")}'
             ),
         ),
         at_sender=True,
     )
+"""
+@on_command("网站测速", aliases={"web测速", "WEB测速"}).handle()
+@error_handle()
+async def _(matcher: Matcher, args: Message = CommandArg()):
+    if not (arg := args.extract_plain_text()):
+        await matcher.finish("请输入域名")
+
+    await matcher.finish(
+        format_return(
+            await get_api_resp("speed", {"url": "http://" + arg}),
+            lambda ret_web: (
+                f'访问速度：{ret_web}'
+                ),
+        ),
+        at_sender=True,
+    )
+"""
+
 
 @on_command("ping", aliases={"Ping", "PING"}).handle()
 @error_handle()
