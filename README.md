@@ -158,6 +158,9 @@ nb plugin update nonebot_plugin_smallapi
 
 - 维护更新，蟒蛇(Python)版本要求最低改为3.10
 
+### 1.0.7
+
+- 优化更新
 </details>
 
 ## 致谢
