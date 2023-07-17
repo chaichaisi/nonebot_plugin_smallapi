@@ -26,7 +26,7 @@ _✨ 高效，快速的小小WEBAPI调用插件！ ✨_
     <img src="https://img.shields.io/pypi/v/nonebot_plugin_smallapi.svg" alt="pypi">
 </a>
 <a href="https://www.python.org">
-    <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
+    <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="python">
 </a>
 
 </div>
