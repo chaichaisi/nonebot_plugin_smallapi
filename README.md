@@ -161,6 +161,10 @@ nb plugin update nonebot_plugin_smallapi
 ### 1.0.7
 
 - 优化更新
+
+### 1.1.0
+
+- 站点代码重写更新
 </details>
 
 ## 致谢
