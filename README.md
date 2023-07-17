@@ -154,6 +154,10 @@ nb plugin update nonebot_plugin_smallapi
 
 - 修复ip查询中的致命语法错误
 
+### 1.0.6
+
+- 维护更新，蟒蛇(Python)版本要求最低改为3.10
+
 </details>
 
 ## 致谢
