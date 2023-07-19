@@ -69,6 +69,7 @@ plugins = ["nonebot_plugin_smallapi"]
 
 ### 3. 本地安装(不推荐)
 
+仓库没更新，建议nb-cli
 将项目clone到你的机器人插件下的对应插件目录内（一般为机器人文件夹下的`src/plugins`），然后把`nonebot_plugin_smallapi`文件夹里的内容拷贝至上一级目录即可。  
 clone命令参考（得先装`git`，懂的都懂）：
 ```
