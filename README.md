@@ -31,6 +31,10 @@ _✨ 高效，快速的小小WEBAPI调用插件！ ✨_
 
 </div>
 
+## 🙏 致谢
+
+感谢大佬[lgc2333](https://github.com/lgc-NB2Dev/)提供借鉴源代码
+[借鉴的代码](https://github.com/lgc-NB2Dev/ShigureBot/blob/main/src/plugins/shigure_bot/plugins/site_tool/__main__.py)
 
 ## 📖 前言及介绍
 
