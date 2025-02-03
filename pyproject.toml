@@ -3,7 +3,7 @@ name = "nonebot_plugin_smallapi"
 version = "1.1.5"
 description = "高效，快速的小小WEBAPI调用插件！"
 authors = ["Chaichaisi <chaichaisi@qq.com>"]
-license = "MIT"
+license = "LGPL-2.1"
 readme = "README.md"
 packages = [{include = "nonebot_plugin_smallapi"}]
 homepage = "https://github.com/chaichaisi/nonebot_plugin_smallapi"
