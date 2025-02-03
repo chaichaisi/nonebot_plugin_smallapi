@@ -89,7 +89,7 @@ nb plugin update nonebot_plugin_smallapi
 
 | 配置项 | 必填 | 默认值 | 说明 |
 |:-----:|:----:|:----:|:----:|
-| smallapi_token | 否 | 空 | [故梦API](https://www.gmya.net/api)的调用KEY |
+| smallapi_token | 是 | 无 | [故梦API](https://www.gmya.net/api)的调用KEY |
 
 例如.env.prod :
 ```
@@ -97,6 +97,10 @@ nb plugin update nonebot_plugin_smallapi
 smallapi_token="qwer1234114514"
 #不可以填纯数字哈，不可以没有""哈，除非你闲的没事a.e
 #密钥获取网址: https://www.gmya.net/api
+#没有你就填
+smallapi_token=""
+#这是必填配置项！！！  
+
 ```
 不填写也能用，但是有调用限制哈！
 
