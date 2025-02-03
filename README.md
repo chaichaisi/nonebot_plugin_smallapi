@@ -73,14 +73,10 @@ plugins = ["nonebot_plugin_smallapi"]
 
 ### 3. 本地安装(不推荐)
 
-仓库没更新，建议nb-cli
-将项目clone到你的机器人插件下的对应插件目录内（一般为机器人文件夹下的`src/plugins`），然后把`nonebot_plugin_smallapi`文件夹里的内容拷贝至上一级目录即可。  
-clone命令参考（得先装`git`，懂的都懂）：
-```
-git clone https://github.com/chaichaisi/nonebot_plugin_smallapi.git
-``` 
+访问项目[Pypi主页](https://pypi.org/project/nonebot-plugin-smallapi/#files)下载.tar.gz文件
 也可以直接下载压缩包到插件目录解压，然后同样提取`nonebot_plugin_smallapi`至上一级目录。  
 目录结构： ```你的bot/src/plugins/nonebot_plugin_smallapi/__init__.py```  
+不再提供github仓库资源版本(懒)  
 
 ### 更新版本
 ```
